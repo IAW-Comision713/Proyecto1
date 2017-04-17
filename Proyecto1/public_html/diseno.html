@@ -11,7 +11,8 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link type="text/css" rel="stylesheet" href="css/materialize.css">
-        <script type="text/javascript" src="codigo.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/estilospartes.css">
+        <!--script type="text/javascript" src="codigo.js"></script (no me anduvo!!)-->
     </head>
     <body>
         <nav class="nav-extended">
@@ -23,7 +24,7 @@ and open the template in the editor.
             </div>
             <div class="nav-content">
                 <ul class="tabs tabs-transparent">
-                    <li class="tab"><a id="btnMalla">Malla</a></li>
+                    <li class="tab"><a id="btnMalla" href="#">Malla</a></li>
                   <li class="tab"><a id="btnMarco" class="active" href="#test2">Marco</a></li>
                   <li class="tab"><a id="btnAgujas" href="#test3">Agujas</a></li>
                   <li class="tab"><a id="btnFondo" href="#test4">Fondo</a></li>
@@ -42,7 +43,13 @@ and open the template in the editor.
                 </ul> 
             </div>
             <div class="col s8">
-                <img class="responsive-img" src="img/GenerateViewImage.png" >
+                <div id="reloj">
+                    <img class="parte" src="img/malla.png" >
+                    <img class="parte" src="img/marco.png" >
+                    <img class="parte" src="img/fondo.png" >
+                
+                </div>
+         
             </div>
         </div>
         
@@ -66,6 +73,6 @@ and open the template in the editor.
                 <div class="col s2">Color</div>
             </div>
         </div>
-        <div id="test5">Tamanios</div>
+        <div id="test5">Tamaños</div>
     </body>
 </html>

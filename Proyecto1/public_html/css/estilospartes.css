@@ -1,0 +1,14 @@
+#reloj {
+    
+    position: relative;
+}
+
+.parte {
+   
+    display: block;
+    margin: auto;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border:none;
+}
