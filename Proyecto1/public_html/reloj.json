@@ -1,0 +1,59 @@
+
+{"personalizables": {
+    "malla": [ 
+        {"diseño" : { "id": “...”, "nombre": “...”, "imagen": “...”},
+        "color": { "id": “...”, "codigo": “...”}
+        },
+	{...}
+	],
+
+    "aguja"”: [
+	{"estilo": {"id": “...”, "nombre": “...”},
+	"color": { "id": “...”, "codigo": “...”}
+	},
+	{...}
+	],
+
+    "numeros": [
+	{"id": “...”, “nombre”: “...”}, {...}
+	],
+
+	“marcoYHebilla”: [
+		{
+		“forma”: {“id”: “...”, “nombre”: “...”},
+		“color”: { “id”: “...”, “código”: “...”}
+		},
+	
+		{...}
+	],
+
+	“tamaño”: [“pequeño”, “mediano”, “grande”]
+}
+}
+
+
+{	“reloj”: {
+	“malla”: {
+“diseño” : { “id”: “...”, “nombre”: “...”, “imagen”: “...”},
+“color”: { “id”: “...”, “código”: “...”}
+},
+
+	“agujas”: {
+		“estilo”: {“id”: “...”, “nombre”: “...”},
+		“color”: { “id”: “...”, “código”: “...”}
+	},
+
+	“números”: {
+“id”: “...”,
+“nombre”: “...”,
+},
+	
+	“marcoYHebilla”: {
+		“forma”: {“id”: “...”, “nombre”: “...”},
+		“color”: { “id”: “...”, “código”: “...”}
+	},
+	
+	“tamaño”: “...”
+	}
+}
+
