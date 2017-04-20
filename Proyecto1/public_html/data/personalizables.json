@@ -1,19 +1,13 @@
 {
     "mallas": [ 
-        {"diseño" : { "id": "1", "nombre": "malla", "imagen":"malla.png"},
-        "color": { "id": "", "codigo": ""}
-        },
+         { "id": "1", "nombre": "malla", "imagen":"malla.png"},
         
-        {"diseño" : { "id": "2", "nombre": "malla-roja", "imagen":"malla-roja.png"},
-        "color": { "id": "", "codigo": ""}
-        }
+        { "id": "2", "nombre": "malla-roja", "imagen":"malla-roja.png"}
 	
 	],
 
     "agujas": [
-	{"estilo": {"id":"1", "nombre": "original"},
-	"color": { "id": "1", "codigo":"black"}
-	}
+            {"id":"1", "nombre": "original"}
 	
 	],
 
@@ -22,10 +16,13 @@
 	],
 
     "marcos": [
-		{"forma": {"id": "1", "nombre": "redondo"},
-		"color": { "id": "1", "código": "violet"}
-		}
+		{"id": "1", "nombre": "redondo"}
 	],
 
-    "tamaño": ["pequeño", "mediano", "grande"]
+    "tamaño": [
+        {"id": "1", "nombre":"pequeño"},
+        {"id": "2", "nombre":"mediano"},
+        {"id": "3", "nombre":"grande"}
+    
+    ]
 }
