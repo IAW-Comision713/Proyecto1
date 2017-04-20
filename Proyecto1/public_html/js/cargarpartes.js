@@ -47,10 +47,7 @@ function cargaropciones(nombre, opciones, li) {
         var opcion = $("<div></div>").text(opciones[index].nombre);
         opcion.attr("class", "collection-item");
         
-        opcion.click(function(){
-            
-            actualizarReloj(nombre, nom);
-        });
+        opcion.click(click(nombre, nom));
         
         item.append(opcion);
         lista.append(item);
@@ -58,6 +55,12 @@ function cargaropciones(nombre, opciones, li) {
     }
     
     div.append(lista);
+}
+
+function click(nombre, nom) {
+    return function(){
+        actualizarReloj(nombre, nom);
+    };
 }
 
 function actualizarReloj(parte, elegido) {

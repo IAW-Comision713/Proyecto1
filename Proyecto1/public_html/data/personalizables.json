@@ -1,21 +1,21 @@
 {
-    "mallas": [ 
-         { "id": "1", "nombre": "malla", "imagen":"malla.png"},
+    "malla": [ 
+         { "id": "1", "nombre": "malla-violeta", "imagen":"malla.png"},
         
         { "id": "2", "nombre": "malla-roja", "imagen":"malla-roja.png"}
 	
 	],
 
-    "agujas": [
+    "aguja": [
             {"id":"1", "nombre": "original"}
 	
 	],
 
-    "numeros": [
+    "numero": [
 	{"id": "1", "nombre": "fondo"}
 	],
 
-    "marcos": [
+    "marco": [
 		{"id": "1", "nombre": "redondo"}
 	],
 
