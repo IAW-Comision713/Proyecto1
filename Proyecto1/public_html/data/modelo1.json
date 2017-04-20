@@ -1,0 +1,18 @@
+{
+    "malla": {
+        "diseño" : { "id":"", "nombre":"", "imagen":""},
+        "color": { "id":"", "codigo":""}
+    },
+    "agujas": {
+	"estilo": {"id": "", "nombre": ""},
+	"color": { "id": "", "codigo": ""}
+    },
+    
+    "numeros": {"id": "","nombre": ""},
+    "marcoYHebilla": {
+		"forma": {"id": "", "nombre": ""},
+		"color": { "id": "", "codigo": ""}
+    },
+    "tamaño": ""
+ }
+

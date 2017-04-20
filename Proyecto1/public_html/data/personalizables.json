@@ -1,0 +1,31 @@
+{
+    "mallas": [ 
+        {"diseño" : { "id": "1", "nombre": "malla", "imagen":"malla.png"},
+        "color": { "id": "", "codigo": ""}
+        },
+        
+        {"diseño" : { "id": "2", "nombre": "malla-roja", "imagen":"malla-roja.png"},
+        "color": { "id": "", "codigo": ""}
+        }
+	
+	],
+
+    "agujas": [
+	{"estilo": {"id":"1", "nombre": "original"},
+	"color": { "id": "1", "codigo":"black"}
+	}
+	
+	],
+
+    "numeros": [
+	{"id": "1", "nombre": "fondo"}
+	],
+
+    "marcos": [
+		{"forma": {"id": "1", "nombre": "redondo"},
+		"color": { "id": "1", "código": "violet"}
+		}
+	],
+
+    "tamaño": ["pequeño", "mediano", "grande"]
+}
