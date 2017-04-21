@@ -64,10 +64,18 @@ function cargaropciones(nombre, opciones, li) {
 	var oID=$(this).attr("id");         
         var nombre= $(this).text();
         var padre= $("#"+oID).parent().parent().parent().siblings().text(); //aca estoy en el div con el nombre de la parte
-
+        var op;
         
-        
-        actualizarReloj(padre,nombre);	   
+        for(var i in personalizables){
+            if(i.toString()==padre){
+                op=personalizables[i];
+            }                
+        }
+        for(var j=0; j<op.length;j++)
+            if(op[j].nombre.toString()==nombre){
+                actualizarReloj(padre,op[j]);                
+            }
+          	   
         });
 }
 
