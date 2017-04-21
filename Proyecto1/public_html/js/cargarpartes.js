@@ -46,26 +46,30 @@ function cargaropciones(nombre, opciones, li) {
 
         var item = $("<li></li>");
         var opcion = $("<div></div>").text(opciones[index].nombre);
+        item.append(opcion);
+        lista.append(item);
+        
         opcion.attr("class", "collection-item");
         opcion.attr("id",nombre+"op"+index);
         
         //opcion.click(click(nombre, nom));
-        $(".collection-item").on('click',function() {
+        
+        
+        
+    }
+    
+    div.append(lista);
+    $(".collection-item").on('click',function() {
 	var oID=$(this).attr("id");         
         
-        var elem= $("#"+oID).parents().eq(3); //no funciona y no se por que
+        var elem= $("#"+oID).parent().parent().parent().siblings(); //aca estoy en el div con el nombre de la parte
         
-        var padre= elem.attr("text"); //obtengo los padres hasta conseguir el nombre de la parte seleccionada
+        var padre= elem[0]; 
+        var padreNom=padre.attr("innerHTML"); //no funcionaa
         var nombre= $("#"+oID).attr("text");
         
         actualizarReloj(padre,nombre);	   
         });
-        item.append(opcion);
-        lista.append(item);
-      
-    }
-    
-    div.append(lista);
 }
 
 
