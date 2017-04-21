@@ -27,6 +27,7 @@ function cargarpartes(data) {
 function cargarmenu(parte, item) {
     
      var link = $("<div></div>").attr("class", "collapsible-header").text(parte);
+     
      item.append(link);
 }
 
@@ -61,12 +62,10 @@ function cargaropciones(nombre, opciones, li) {
     div.append(lista);
     $(".collection-item").on('click',function() {
 	var oID=$(this).attr("id");         
+        var nombre= $(this).text();
+        var padre= $("#"+oID).parent().parent().parent().siblings().text(); //aca estoy en el div con el nombre de la parte
+
         
-        var elem= $("#"+oID).parent().parent().parent().siblings(); //aca estoy en el div con el nombre de la parte
-        
-        var padre= elem[0]; 
-        var padreNom=padre.attr("innerHTML"); //no funcionaa
-        var nombre= $("#"+oID).attr("text");
         
         actualizarReloj(padre,nombre);	   
         });
