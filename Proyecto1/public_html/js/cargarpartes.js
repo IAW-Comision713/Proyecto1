@@ -33,6 +33,7 @@ function cargarmenu(parte, item) {
 function cargaropciones(nombre, opciones, li) {
     
     var div = $("<div></div>").attr("class", "collapsible-body");
+    
     li.append(div);
     
     var lista = $("<ul></ul>");
@@ -46,9 +47,19 @@ function cargaropciones(nombre, opciones, li) {
         var item = $("<li></li>");
         var opcion = $("<div></div>").text(opciones[index].nombre);
         opcion.attr("class", "collection-item");
+        opcion.attr("id",nombre+"op"+index);
         
-        opcion.click(click(nombre, nom));
+        //opcion.click(click(nombre, nom));
+        $(".collection-item").on('click',function() {
+	var oID=$(this).attr("id");         
         
+        var elem= $("#"+oID).parents().eq(3); //no funciona y no se por que
+        
+        var padre= elem.attr("text"); //obtengo los padres hasta conseguir el nombre de la parte seleccionada
+        var nombre= $("#"+oID).attr("text");
+        
+        actualizarReloj(padre,nombre);	   
+        });
         item.append(opcion);
         lista.append(item);
       
@@ -57,11 +68,14 @@ function cargaropciones(nombre, opciones, li) {
     div.append(lista);
 }
 
-function click(nombre, nom) {
+
+
+
+/*function click(nombre, nom) {
     return function(){
         actualizarReloj(nombre, nom);
     };
-}
+} */
 
 function actualizarReloj(parte, elegido) {
     
