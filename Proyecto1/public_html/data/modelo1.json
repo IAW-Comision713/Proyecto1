@@ -1,18 +1,8 @@
 {
-    "malla": {
-        "diseño" : { "id":"", "nombre":"", "imagen":""},
-        "color": { "id":"", "codigo":""}
-    },
-    "agujas": {
-	"estilo": {"id": "", "nombre": ""},
-	"color": { "id": "", "codigo": ""}
-    },
-    
-    "numeros": {"id": "","nombre": ""},
-    "marcoYHebilla": {
-		"forma": {"id": "", "nombre": ""},
-		"color": { "id": "", "codigo": ""}
-    },
-    "tamaño": ""
+    "malla": {"id": "", "nombre": "", "imagen":""},
+    "aguja": {"id":"", "nombre": "", "imagen":""},    
+    "numero": {"id": "","nombre": "", "imagen":""},
+    "marco": {"id": "", "nombre": "", "imagen":""},
+    "tamaño": {"id": "", "nombre":"", "imagen":""}
  }
 

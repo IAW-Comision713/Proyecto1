@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link type="text/css" rel="stylesheet" href="css/materialize.css">
-        <link type="text/css" rel="stylesheet" href="css/estilospartes.css" media="screen">
+        <link id="estilo" type="text/css" rel="stylesheet" href="css/estilospartes.css" media="screen">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         
@@ -26,7 +26,7 @@
                     <a href="diseno.html" class="breadcrumb">Diseño</a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a id="guardar" href="javascript:guardarEstilo();"><i class="material-icons left">turned_in_not</i>Guardar estilo</a>
+                            <a id="guardar" href="javascript:guardarEstilo();"><i id="icono" class="material-icons left">turned_in_not</i>Estilo Guardado</a>
                         </li>
                     </ul>
                     
@@ -43,8 +43,8 @@
                 <img id="numero" class="parte" src="img/numero.png" alt="imagen numero">
             </div>
             <div id="botonera" class="s2 offset-s8">
-                <button class=" waves-effect btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>
-                <button class=" waves-effect btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>
+                <button class="btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>                
+                <button class="  btn-floating " onclick="addFavoritos()"><i class="material-icons large">star</i></button>
             </div>
             
         </div>

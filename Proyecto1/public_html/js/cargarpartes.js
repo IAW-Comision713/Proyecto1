@@ -1,15 +1,44 @@
 var personalizables;
+var modelo;
 
 
 $(function() {
     var ajax = new AJAXInteraction("data/personalizables.json", function(data) {
         personalizables = data;
         cargarpartes(data);
+        //cargarmodelo(data);
     });
     ajax.doGet();
     
    $('.collapsible').collapsible(); 
 });
+
+
+$(function(){
+    if(localStorage.getItem("estilo")!==null){
+        var estilo=localStorage.getItem("estilo");
+        $("#estilo").attr("href",estilo);    
+        $("#guardar i").text("turned_in");
+    }
+});
+
+//$(function() {
+/*function cargarmodelo(datos){
+    var ajax=new AJAXInteraction("data/modelo1.json", function(dat) {
+        modelo=dat;
+    });
+    ajax.doGet();
+        for(var item in datos){
+            inicializar(item,datos[item]);
+        }
+//});
+}
+function inicializar(item,opciones){
+    var i=modelo.length;
+    
+    modelo[item]={"id":opciones[i].id,"nombre":opciones[i].nombre,"imagen":opciones[i].imagen};
+  
+}*/
 
 function cargarpartes(data) {
       
@@ -82,6 +111,7 @@ function cargaropciones(nombre, opciones, li) {
 function actualizarReloj(parte, elegido) {
     
     $("#"+parte).attr('src', "img/"+elegido.imagen);
+    modelo[parte]=elegido;
 }
 
 function limpiarReloj(){
@@ -90,6 +120,30 @@ function limpiarReloj(){
     }
 }
 
-function guardarEstilo(){
+function guardarEstilo(){    
+    
+    if( localStorage.getItem("estilo")!==null){
+        localStorage.removeItem("estilo");
+        $("#guardar i").text("turned_in_not");        
+    }
+    else{
+        var hrefEstilo= $("#estilo").attr("href");
+        localStorage.setItem("estilo",hrefEstilo);
+        $("#guardar i").text("turned_in");
+    }
+  
+}
+
+function addFavoritos(){
+    if(localStorage.getItem("favorito")!==null){
+        Materialize.toast('Favorito reemplazado!', 4000);
+    }
+    else{
+        Materialize.toast('Marcado como favorito!', 4000);
+              
+    }
+    localStorage.setItem("favorito",JSON.stringify(modelo));
+    
+    
     
 }
