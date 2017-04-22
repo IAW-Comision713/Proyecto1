@@ -7,6 +7,7 @@
         
         <link type="text/css" rel="stylesheet" href="css/materialize.css">
         <link type="text/css" rel="stylesheet" href="css/estilospartes.css" media="screen">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         
         <script language="javascript" src="js/jquery-3.2.1.js"></script>
@@ -17,30 +18,34 @@
         <!--script type="text/javascript" src="codigo.js"></script (no me anduvo!!)-->
     </head>
     <body>
-        <div id="contenedor" class="container z-depth-4 ">
+        <div id="contenedor" class="container z-depth-4 row">
             <nav class="nav-extended transparent">
                 <div class="nav-wrapper">
                   <div id="barra1" class="col s12">
                     <a href="index.html" class="breadcrumb">Home</a>
                     <a href="diseno.html" class="breadcrumb">Diseño</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a id="guardar" href="javascript:guardarEstilo();"><i class="material-icons left">turned_in_not</i>Guardar estilo</a>
+                        </li>
+                    </ul>
+                    
                   </div>
                 </div>
-            </nav>
-            
-            <div>
-                    <ul class="collapsible" data-collapsible="accordion" id="partes">                      
-                    </ul>
+            </nav>            
+            <div class="col s3">
+                <ul class="collapsible" data-collapsible="accordion" id="partes">                      
+                </ul>
+            </div>           
+            <div id="reloj" class="col s9">
+                <img id="malla" class="parte" src="img/malla.png" alt="imagen malla" >
+                <img id="marco" class="parte" src="img/marco.png" alt="imagen marco">
+                <img id="numero" class="parte" src="img/numero.png" alt="imagen numero">
             </div>
-            
-            <div id="opciones">
-                
+            <div id="botonera" class="s2 offset-s8">
+                <button class=" waves-effect btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>
+                <button class=" waves-effect btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>
             </div>
-                    <div id="reloj">
-                        <img id="malla" class="parte" src="img/malla.png" alt="imagen malla" >
-                        <img id="marco" class="parte" src="img/marco.png" alt="imagen marco">
-                        <img id="fondo" class="parte" src="img/fondo.png" alt="imagen fondo">
-
-                    </div>
             
         </div>
     </body>

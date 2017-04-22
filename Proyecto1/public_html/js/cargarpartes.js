@@ -12,7 +12,7 @@ $(function() {
 });
 
 function cargarpartes(data) {
-    
+      
     for(var parte in data) {
         
         var item = $("<li></li>");
@@ -52,12 +52,12 @@ function cargaropciones(nombre, opciones, li) {
         
         opcion.attr("class", "collection-item");
         opcion.attr("id",nombre+"op"+index);
-        
-        //opcion.click(click(nombre, nom));
-        
-        
-        
+           
     }
+    
+    /*opcion.on("click", {"nombre":nombre, "op":nom}, function(e) {
+            actualizarReloj(e.data.nombre, e.data.op);
+        });*/
     
     div.append(lista);
     $(".collection-item").on('click',function() {
@@ -67,29 +67,29 @@ function cargaropciones(nombre, opciones, li) {
         var op;
         
         for(var i in personalizables){
-            if(i.toString()==padre){
+            if(i.toString()===padre){
                 op=personalizables[i];
             }                
         }
         for(var j=0; j<op.length;j++)
-            if(op[j].nombre.toString()==nombre){
+            if(op[j].nombre.toString()===nombre){
                 actualizarReloj(padre,op[j]);                
             }
           	   
         });
 }
 
-
-
-
-/*function click(nombre, nom) {
-    return function(){
-        actualizarReloj(nombre, nom);
-    };
-} */
-
 function actualizarReloj(parte, elegido) {
     
     $("#"+parte).attr('src', "img/"+elegido.imagen);
 }
 
+function limpiarReloj(){
+    for(var parte in personalizables){
+        $("#"+parte).attr("src","img/vacio.png");
+    }
+}
+
+function guardarEstilo(){
+    
+}
