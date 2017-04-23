@@ -10,7 +10,7 @@
     color: white;
 }
 #nav-mobile li a{
-   color: black ;
+   color: white ;
 }
 
 #btnPersonalizar{
@@ -25,19 +25,39 @@
 }
 
 body{
-    background-color: white ;
+    background-color: #fff9c4;
 }
 
 #contenedor{
-    background-color:#ffd740;
+    background-color:white;
     size: auto;
 }
 
-#barra1 a{
-    color: black;
+#barra{
+    background-color: #f44336;
+    color: white;
 }
+
 
 #btnMalla,#btnMarco,#btnAgujas,#btnFondo,#btnNumeros{
     color: black;
 }
+
+#btnFav{
+    background-color: #ffea00;
+}
+
+#btnDesechar{
+    background-color: #d50000;
+}
+
+#btnAplicar{
+    background-color: #00c853;
+}
+
+#btnDescargar{
+    background-color: #2196f3;
+}
+
+
 
