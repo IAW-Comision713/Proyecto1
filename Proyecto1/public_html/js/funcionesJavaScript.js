@@ -1,14 +1,22 @@
 var personalizables;
 var modelo;
+var preestablecidos;
 
 $(function() {
     var ajax = new AJAXInteraction("data/personalizables.json", function(data) {
         personalizables = data;
         cargarpartes(data);
-        cargarpreestablecido(0);
     });
     ajax.doGet();
     
+    ajax = new AJAXInteraction("data/preestablecidos.json", function(data) {
+        
+        preestablecidos = data;
+        cargarmenupreestablecidos(data.length);
+        cargarpreestablecido(0);
+    });
+    ajax.doGet();
+ 
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     
@@ -73,6 +81,28 @@ function actualizarReloj(parte, elegido) {
     $("#"+parte).attr('src', "img/"+elegido.imagen);
 }
 
+function cargarmenupreestablecidos(cant) {
+    
+    var lista = $("<ul></ul>");
+    
+    var index;
+    for(index = 1; index < cant; index++) {
+        
+        var item = $("<li></li>");
+        var opcion = $("<a></a>").text("Modelo "+index);
+        opcion.attr("class", "waves-effect waves-light btn");
+        item.append(opcion);
+        lista.append(item);
+        
+        opcion.on("click", {"id":index}, function(e) {
+            
+            cargarpreestablecido(e.data.id);
+        });
+    }
+    
+    $("#botonera-preestablecidos").append(lista);
+}
+
 function limpiarReloj(){
     
     cargarpreestablecido(0);
@@ -88,11 +118,7 @@ function cargarmodelo(modelo) {
 
 function cargarpreestablecido(id) {
     
-    var ajax = new AJAXInteraction("data/preestablecidos.json", function(data) {
-        
-        modelo = data[id];
-    });
-    ajax.doGet();
+    modelo = preestablecidos[id];
     
     cargarmodelo(modelo);
 }
@@ -104,8 +130,7 @@ function addFavoritos(){
     }
     else{
         
-        Materialize.toast('Marcado como favorito!', 4000);
-              
+        Materialize.toast('Marcado como favorito!', 4000);       
     }
     
     localStorage.setItem("favorito", JSON.stringify(modelo));

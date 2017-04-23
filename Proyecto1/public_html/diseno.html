@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <link rel="shortcut icon" href="img/favicon.ico">
+        
         <link type="text/css" rel="stylesheet" href="css/materialize.css">
         <link id="estilo" type="text/css" rel="stylesheet" href="css/estilo1.css" media="screen">
         <link type="text/css" rel="stylesheet" href="css/estilospartes.css">
@@ -47,21 +49,22 @@
                 <ul class="collapsible" data-collapsible="accordion" id="partes">                      
                 </ul>
             </div>           
-            <div id="reloj" class="col s9">
+            <div id="reloj" class="col s6">
                
                 
                 <img id="malla" class="parte" src="img/malla.png" alt="imagen malla" >
                 <img id="marco" class="parte" src="img/marco.png" alt="imagen marco">
                 <img id="numero" class="parte" src="img/numero.png" alt="imagen numero">
             </div>
-            <div id="botonera" class="s2 offset-s8">
+            <div id="botonera-acciones" class="s2 offset-s8">
                 <button class="btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>                
                 <button class="  btn-floating " onclick="addFavoritos()"><i class="material-icons large">star</i></button>
                 <button class="  btn-floating " onclick="aplicarFavorito()"><i class="material-icons large">restore</i></button>
-                <button class="  btn-floating " onclick="descargarimagen()"><i class="material-icons large">system_update_alt</i></button>
-                
+                <button class="  btn-floating " onclick="descargarimagen()"><i class="material-icons large">system_update_alt</i></button> 
             </div>
             
+            <div id="botonera-preestablecidos" class="col s3">
+            </div>
         </div>
     </body>
 </html>
