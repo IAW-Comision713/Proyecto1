@@ -1,43 +1,55 @@
-#modelos{
-    border: none;
-    color: white;  
-}
-#modelos li{
-    background-color: #f57f17;
-    border:none;
-}
-#modelos li a{
-    color: white;
-}
-#nav-mobile li a{
-   color: black ;
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
-#btnPersonalizar{
-    height: 500px;
+p {
+  line-height: 2rem;
 }
 
-#btnPersonalizar a{
-    top: 250px; 
-    left: 400px;
-    background-color: orange;
-    color: black;
+.button-collapse {
+  color: #26a69a;
 }
 
-body{
-    background-color: white ;
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-#contenedor{
-    background-color:#ffd740;
-    size: auto;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
 
-#barra1 a{
-    color: black;
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-#btnMalla,#btnMarco,#btnAgujas,#btnFondo,#btnNumeros{
-    color: black;
+footer.page-footer {
+  margin: 0;
+}
+
+.btn, .btn-large {
+    
+    background-color: #01579b;
 }
 

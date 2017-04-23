@@ -3,7 +3,7 @@
     color: white;  
 }
 #modelos li{
-    background-color: blue;
+    background-color: #f57f17;
     border:none;
 }
 #modelos li a{
@@ -29,8 +29,7 @@ body{
 }
 
 #contenedor{
-    
-    background-color: blue;
+    background-color:#ffd740;
     size: auto;
 }
 

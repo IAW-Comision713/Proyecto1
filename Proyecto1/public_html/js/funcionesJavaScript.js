@@ -9,6 +9,7 @@ $(function() {
     });
     ajax.doGet();
     
+    $('.parallax').parallax();
     $('.collapsible').collapsible();
     
     if(localStorage.getItem("estilo") !== null){ 
