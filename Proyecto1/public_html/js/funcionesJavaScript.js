@@ -90,7 +90,7 @@ function cargarmenupreestablecidos(cant) {
         
         var item = $("<li></li>");
         var opcion = $("<a></a>").text("Modelo "+index);
-        opcion.attr("class", "waves-effect waves-light btn");
+        opcion.attr("class", "waves-effect btn");
         item.append(opcion);
         lista.append(item);
         

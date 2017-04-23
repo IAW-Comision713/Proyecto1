@@ -9,9 +9,7 @@
 #modelos li a{
     color: white;
 }
-#nav-mobile li a{
-   color: white ;
-}
+
 
 #btnPersonalizar{
     height: 500px;
@@ -34,7 +32,7 @@ body{
 }
 
 #barra{
-    background-color: #f44336;
+    background-color: #26a69a;
     color: white;
 }
 
@@ -59,5 +57,36 @@ body{
     background-color: #2196f3;
 }
 
+.collapsible-body{
+    background-color: #a7ffeb;
+    
+}
+
+
+#botonera-preestablecidos ul li a{
+    background-color: #00695c;
+    top: 160px;
+    
+}
+
+#botonera button{
+    top: 190px;
+}
+
+#barra1{
+    background-color: #00bfa5;
+}
+
+#partes{
+    top: 180px;
+}
+
+#btnEstilo{
+    background-color: #004d40;
+}
+
+#btnCrear{
+    background-color: #00695c;
+}
 
 
