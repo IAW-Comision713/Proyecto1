@@ -1,25 +1,22 @@
 [{
-    "malla": {"id": "1", "nombre": "malla-violeta", "imagen":"malla.png"},
-    "aguja": {"id":"", "nombre": "", "imagen":""},    
-    "numero": {"id": "1","nombre": "fondo", "imagen":"numero.png"},
+    "malla": {"id": "1", "nombre": "malla-violeta", "imagen":"malla.png"},    
     "marco": {"id": "1", "nombre": "marco", "imagen":"marco.png"},
-    "tamaño": {"id": "", "nombre":"", "imagen":""}
+    "numero": {"id": "1","nombre": "fondo", "imagen":"numero.png"},
+    "aguja": {"id":"", "nombre": "", "imagen":""}
  },
   
 {
-    "malla": {"id": "1", "nombre": "malla-roja", "imagen":"malla-roja.png"},
-    "aguja": {"id":"", "nombre": "", "imagen":""},    
-    "numero": {"id": "1","nombre": "fondo", "imagen":"numero.png"},
+    "malla": {"id": "1", "nombre": "malla-roja", "imagen":"malla-roja.png"},    
     "marco": {"id": "1", "nombre": "marco", "imagen":"marco.png"},
-    "tamaño": {"id": "", "nombre":"", "imagen":""}
+    "numero": {"id": "1","nombre": "fondo", "imagen":"numero.png"},
+    "aguja": {"id":"", "nombre": "", "imagen":""}
  },
  
- {
-    "malla": {"id": "1", "nombre": "malla-violeta", "imagen":"malla.png"},
-    "aguja": {"id":"", "nombre": "", "imagen":""},    
-    "numero": {"id": "1","nombre": "fondo", "imagen":"numero.png"},
+{
+    "malla": {"id": "1", "nombre": "malla-violeta", "imagen":"malla.png"},    
     "marco": {"id": "1", "nombre": "marco", "imagen":"marco.png"},
-    "tamaño": {"id": "", "nombre":"", "imagen":""}
+    "numero": {"id": "1","nombre": "fondo", "imagen":"numero.png"},
+    "aguja": {"id":"", "nombre": "", "imagen":""}
  }
 
 ]

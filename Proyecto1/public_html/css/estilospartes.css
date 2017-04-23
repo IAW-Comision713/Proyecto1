@@ -2,14 +2,15 @@
     
     position: relative;
     height: 530px;
+  
 }
 
 .parte {
    
     display: block;
     margin: auto;
-    position:absolute;
-    top:0px;
-    left:0px;
+    position: absolute;
     border: none;
+    height: 530px;
+    width: 278px;
 }

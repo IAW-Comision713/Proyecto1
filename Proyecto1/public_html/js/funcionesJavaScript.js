@@ -36,6 +36,10 @@ function cargarpartes(data) {
         cargaropciones(parte, data[parte], item);
         
         $("#partes").append(item);
+        
+        var imagen = $("<img id="+parte+" class='parte' src=img/numero.png alt='Parte de un reloj'>");
+        
+        $("#reloj").append(imagen);
     }
 }
 

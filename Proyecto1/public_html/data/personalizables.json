@@ -5,24 +5,17 @@
         { "id": "2", "nombre": "malla-roja", "imagen":"malla-roja.png"}
 	
 	],
-
-    "aguja": [
-            {"id":"1", "nombre": "original", "imagen":""}
-	
+        
+    "marco": [
+		{"id": "1", "nombre": "redondo", "imagen":""}
 	],
 
     "numero": [
 	{"id": "1", "nombre": "fondo", "imagen":""}
 	],
-
-    "marco": [
-		{"id": "1", "nombre": "redondo", "imagen":""}
-	],
-
-    "tamaño": [
-        {"id": "1", "nombre":"pequeño", "imagen":""},
-        {"id": "2", "nombre":"mediano", "imagen":""},
-        {"id": "3", "nombre":"grande", "imagen":""}
-    
-    ]
+        
+       "aguja": [
+            {"id":"1", "nombre": "original", "imagen":""}
+	
+	]
 }
