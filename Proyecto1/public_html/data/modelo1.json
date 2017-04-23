@@ -1,8 +1,0 @@
-{
-    "malla": {"id": "", "nombre": "", "imagen":""},
-    "aguja": {"id":"", "nombre": "", "imagen":""},    
-    "numero": {"id": "","nombre": "", "imagen":""},
-    "marco": {"id": "", "nombre": "", "imagen":""},
-    "tamaño": {"id": "", "nombre":"", "imagen":""}
- }
-

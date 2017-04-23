@@ -79,45 +79,45 @@ function cargaropciones(nombre, opciones, li) {
         item.append(opcion);
         lista.append(item);
         
-        opcion.attr("class", "collection-item");
-        opcion.attr("id",nombre+"op"+index);
-           
+        opcion.on("click", {"nombre":nombre, "op":nom}, function(e) {
+            actualizarReloj(e.data.nombre, e.data.op);
+        });      
     }
     
-    /*opcion.on("click", {"nombre":nombre, "op":nom}, function(e) {
-            actualizarReloj(e.data.nombre, e.data.op);
-        });*/
-    
     div.append(lista);
-    $(".collection-item").on('click',function() {
-	var oID=$(this).attr("id");         
-        var nombre= $(this).text();
-        var padre= $("#"+oID).parent().parent().parent().siblings().text(); //aca estoy en el div con el nombre de la parte
-        var op;
-        
-        for(var i in personalizables){
-            if(i.toString()===padre){
-                op=personalizables[i];
-            }                
-        }
-        for(var j=0; j<op.length;j++)
-            if(op[j].nombre.toString()===nombre){
-                actualizarReloj(padre,op[j]);                
-            }
-          	   
-        });
 }
 
 function actualizarReloj(parte, elegido) {
     
     $("#"+parte).attr('src', "img/"+elegido.imagen);
-    modelo[parte]=elegido;
+    
+    //modelo[parte]=elegido;
 }
 
 function limpiarReloj(){
     for(var parte in personalizables){
         $("#"+parte).attr("src","img/vacio.png");
     }
+}
+
+
+function cargarmodelo(modelo) {
+    
+    for(var parte in modelo) {
+        
+        actualizarReloj(parte, modelo[parte]);
+    }
+}
+
+function cargarpreestablecido(id) {
+    
+    var ajax = new AJAXInteraction("data/preestablecidos.json", function(data) {
+        
+        modelo = data[id];
+    });
+    ajax.doGet();
+    
+    cargarmodelo(modelo);
 }
 
 function guardarEstilo(){    

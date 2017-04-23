@@ -1,0 +1,18 @@
+[{
+    "malla": {"id": "2", "nombre": "malla-roja", "imagen":"malla-roja.png"},
+    "aguja": {"id":"", "nombre": "", "imagen":""},    
+    "numero": {"id": "","nombre": "", "imagen":""},
+    "marco": {"id": "", "nombre": "", "imagen":""},
+    "tamaño": {"id": "", "nombre":"", "imagen":""}
+ },
+  
+ {
+    "malla": {"id": "2", "nombre": "malla-roja", "imagen":"malla-roja.png"},
+    "aguja": {"id":"", "nombre": "", "imagen":""},    
+    "numero": {"id": "","nombre": "", "imagen":""},
+    "marco": {"id": "", "nombre": "", "imagen":""},
+    "tamaño": {"id": "", "nombre":"", "imagen":""}
+ }
+
+]
+
