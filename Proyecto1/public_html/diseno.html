@@ -20,14 +20,14 @@
     </head>
     <body>
         <div id="contenedor" class="container z-depth-4 row">
-            <nav class="nav-extended transparent">
+            <nav class="nav-extended " id="barra">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Logo</a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                       <li><a href="readme.html">Readme</a></li>
                       <li>
-                        <a class='dropdown-button btn' href='#' data-activates='dropdownestilos'>Estilo</a>
+                        <a class='dropdown-button' href='#' data-activates='dropdownestilos'>Estilo<i class="material-icons right">arrow_drop_down</i></a>
                     
                         <ul id='dropdownestilos' class='dropdown-content'>
                             <li><a href="javascript:cambiarestilo(1);">Estilo 1</a></li>
@@ -55,10 +55,10 @@
                 <img id="numero" class="parte" src="img/numero.png" alt="imagen numero">
             </div>
             <div id="botonera" class="s2 offset-s8">
-                <button class="btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>                
-                <button class="  btn-floating " onclick="addFavoritos()"><i class="material-icons large">star</i></button>
-                <button class="  btn-floating " onclick="aplicarFavorito()"><i class="material-icons large">restore</i></button>
-                <button class="  btn-floating " onclick="descargarimagen()"><i class="material-icons large">system_update_alt</i></button>
+                <button id="btnDesechar" class="btn-floating" onclick="limpiarReloj()"><i class="material-icons large" >delete</i></button>                
+                <button id="btnFav" class="  btn-floating " onclick="addFavoritos()"><i class="material-icons large">star</i></button>
+                <button id="btnAplicar" class="  btn-floating " onclick="aplicarFavorito()"><i class="material-icons large">restore</i></button>
+                <button id="btnDescargar" class="  btn-floating " onclick="descargarimagen()"><i class="material-icons large">system_update_alt</i></button>
                 
             </div>
             
