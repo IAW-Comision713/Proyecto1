@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>    
     <head>
         
@@ -11,12 +6,14 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="css/materialize.css">
-        <link type="text/css" rel="stylesheet" href="css/estilospartes.css">
+        <link id="estilo" type="text/css" rel="stylesheet" href="css/estilo1.css" media="screen">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--cambiar el href para cambiar el estilo. Usar ajax para cargar solo las opciones que se seleccionan.-->
         
         <script language="javascript" src="js/jquery-3.2.1.js"></script>
         <script language="javascript" src="js/materialize.js"></script>
+        <script language="javascript" src="js/jQueryAjax.js"></script>
+        <script language="javascript" src="js/funcionesJavaScript.js"></script>
         
     </head>
     <body background="img/fondofeliz.png">
@@ -25,6 +22,14 @@ and open the template in the editor.
               <a href="#" class="brand-logo">Logo</a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="readme.html">Readme</a></li>
+                <li>
+                    <a class='dropdown-button btn' href='#' data-activates='dropdownestilos'>Estilo</a>
+                    
+                    <ul id='dropdownestilos' class='dropdown-content'>
+                        <li><a href="javascript:cambiarestilo(1);">Estilo 1</a></li>
+                        <li><a href="javascript:cambiarestilo(2);">Estilo 2</a></li>
+                    </ul>
+                </li>
               </ul>
             </div>
         </nav> 

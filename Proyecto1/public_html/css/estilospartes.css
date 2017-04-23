@@ -1,6 +1,7 @@
 #reloj {
     
     position: relative;
+    height: 530px;
 }
 
 .parte {
@@ -11,51 +12,4 @@
     top:0px;
     left:0px;
     border: none;
-}
-
-#modelos{
-    border: none;
-    color: white;  
-}
-#modelos li{
-    background-color: #f57f17;
-    border:none;
-}
-#modelos li a{
-    color: white;
-}
-#nav-mobile li a{
-   color: black ;
-}
-
-#btnPersonalizar{
-    height: 500px;
-}
-
-#btnPersonalizar a{
-    top: 250px; 
-    left: 400px;
-    background-color: orange;
-    color: black;
-}
-
-body{
-    background-color: white ;
-}
-
-#contenedor{
-    background-color:#ffd740;
-    size: auto;
-}
-
-#barra1 a{
-    color: black;
-}
-
-#btnMalla,#btnMarco,#btnAgujas,#btnFondo,#btnNumeros{
-    color: black;
-}
-
-#reloj{
-    height: 530px;
 }

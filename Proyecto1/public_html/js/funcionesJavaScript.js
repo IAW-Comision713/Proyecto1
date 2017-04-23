@@ -1,44 +1,21 @@
 var personalizables;
 var modelo;
 
-
 $(function() {
     var ajax = new AJAXInteraction("data/personalizables.json", function(data) {
         personalizables = data;
         cargarpartes(data);
-        //cargarmodelo(data);
+        cargarpreestablecido(0);
     });
     ajax.doGet();
     
-   $('.collapsible').collapsible(); 
-});
-
-
-$(function(){
-    if(localStorage.getItem("estilo")!==null){
-        var estilo=localStorage.getItem("estilo");
-        $("#estilo").attr("href",estilo);    
-        $("#guardar i").text("turned_in");
+    $('.collapsible').collapsible();
+    
+    if(localStorage.getItem("estilo") !== null){ 
+        
+        cambiarestilo(localStorage.getItem("estilo"));
     }
 });
-
-//$(function() {
-/*function cargarmodelo(datos){
-    var ajax=new AJAXInteraction("data/modelo1.json", function(dat) {
-        modelo=dat;
-    });
-    ajax.doGet();
-        for(var item in datos){
-            inicializar(item,datos[item]);
-        }
-//});
-}
-function inicializar(item,opciones){
-    var i=modelo.length;
-    
-    modelo[item]={"id":opciones[i].id,"nombre":opciones[i].nombre,"imagen":opciones[i].imagen};
-  
-}*/
 
 function cargarpartes(data) {
       
@@ -80,6 +57,7 @@ function cargaropciones(nombre, opciones, li) {
         lista.append(item);
         
         opcion.on("click", {"nombre":nombre, "op":nom}, function(e) {
+            
             actualizarReloj(e.data.nombre, e.data.op);
         });      
     }
@@ -89,17 +67,15 @@ function cargaropciones(nombre, opciones, li) {
 
 function actualizarReloj(parte, elegido) {
     
-    $("#"+parte).attr('src', "img/"+elegido.imagen);
+    modelo[parte] = elegido;
     
-    //modelo[parte]=elegido;
+    $("#"+parte).attr('src', "img/"+elegido.imagen);
 }
 
 function limpiarReloj(){
-    for(var parte in personalizables){
-        $("#"+parte).attr("src","img/vacio.png");
-    }
+    
+    cargarpreestablecido(0);
 }
-
 
 function cargarmodelo(modelo) {
     
@@ -120,30 +96,54 @@ function cargarpreestablecido(id) {
     cargarmodelo(modelo);
 }
 
-function guardarEstilo(){    
-    
-    if( localStorage.getItem("estilo")!==null){
-        localStorage.removeItem("estilo");
-        $("#guardar i").text("turned_in_not");        
-    }
-    else{
-        var hrefEstilo= $("#estilo").attr("href");
-        localStorage.setItem("estilo",hrefEstilo);
-        $("#guardar i").text("turned_in");
-    }
-  
-}
-
 function addFavoritos(){
     if(localStorage.getItem("favorito")!==null){
+        
         Materialize.toast('Favorito reemplazado!', 4000);
     }
     else{
+        
         Materialize.toast('Marcado como favorito!', 4000);
               
     }
-    localStorage.setItem("favorito",JSON.stringify(modelo));
     
-    
-    
+    localStorage.setItem("favorito", JSON.stringify(modelo));
 }
+
+function aplicarFavorito() {
+    
+    if(localStorage.getItem("favorito")!==null){
+       
+        cargarmodelo(JSON.parse(localStorage.getItem("favorito")));
+        
+        Materialize.toast('Favorito cargado!', 4000);
+    }
+    else {
+        
+        Materialize.toast('No hay un modelo favorito guardado!', 4000);
+              
+    }
+}
+
+function descargarimagen() { 
+        html2canvas($("#reloj"), {
+            onrendered: function(canvas) {
+                theCanvas = canvas;
+                
+                //borrar esta linea de abajo si no se usa
+                //document.body.appendChild(canvas);
+
+                canvas.toBlob(function(blob) {
+					saveAs(blob, "Mireloj.png"); 
+				});
+            }
+        });
+ }
+ 
+ function cambiarestilo(id) {
+   
+        $("#estilo").attr("href", "css/estilo"+id+".css");
+        localStorage.setItem("estilo", id);
+        
+        $('.dropdown-button').dropdown('close');
+ }
