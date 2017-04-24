@@ -13,13 +13,7 @@
         { "id": "6", "nombre": "Floral", "imagen":"malla5.png"},
         
         { "id": "7", "nombre": "Verde", "imagen":"malla7.png"}
-	],
-    
-    "Marco": [
-		{"id": "1", "nombre": "Marrón", "imagen":"marco-01.png"},
-                {"id": "2", "nombre": "Plateado", "imagen":"marco-02.png"},
-                {"id": "3", "nombre": "Dorado", "imagen":"marco-03.png"}
-	],   
+	],  
     
 
     "Numeros": [
@@ -31,13 +25,19 @@
         {"id": "6", "nombre": "Arrow", "imagen":"numeros-06.png"},
         {"id": "7", "nombre": "Tonos verdes", "imagen":"numeros-07.png"},
         {"id": "8", "nombre": "Floral", "imagen":"numeros-08.png"},
-        {"id": "9", "nombre": "Stripes", "imagen":"numeros-09.png"}
+        {"id": "9", "nombre": "Stripes", "imagen":"numeros-09.png"},
+        {"id": "9", "nombre": "Bubbles", "imagen":"numeros-10.png"},
+        {"id": "9", "nombre": "Gris", "imagen":"numeros-11.png"},
+        {"id": "9", "nombre": "Simple", "imagen":"numeros-12.png"},
+        {"id": "9", "nombre": "Arcoiris", "imagen":"numeros-13.png"}
 	],
         
     "Marco": [
 		{"id": "1", "nombre": "Marrón", "imagen":"marco-01.png"},
-                {"id": "2", "nombre": "Plateado", "imagen":"marco-02.png"},
-                {"id": "3", "nombre": "Dorado", "imagen":"marco-03.png"}
+                {"id": "2", "nombre": "Plateado", "imagen":"marco-03.png"},
+                {"id": "3", "nombre": "Dorado", "imagen":"marco-02.png"},
+                {"id": "4", "nombre": "Rojo", "imagen":"marco-04.png"},
+                {"id": "5", "nombre": "Negro", "imagen":"marco-05.png"}
 	],    
         
        "Agujas": [

@@ -24,14 +24,44 @@ and open the template in the editor.
         
     </head>
     <body>
-        <div>
-            Cositas a redactar<br>
+        <nav class="nav-extended " id="barra">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Oh! Clock</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li>
+                        <a class='dropdown-button' href='#' data-activates='dropdownestilos'>Estilo<i class="material-icons right">arrow_drop_down</i></a>
+                    
+                        <ul id='dropdownestilos' class='dropdown-content'>
+                            <li><a href="javascript:cambiarestilo(1);">Estilo 1</a></li>
+                            <li><a href="javascript:cambiarestilo(2);">Estilo 2</a></li>
+                        </ul>
+                      </li>
+                    </ul>                    
+                </div>
+                <div class="nav-wrapper" id="barra1">
+                  <div class="col s12">
+                    <a href="index.html" class="breadcrumb">Home</a>
+                    <a href="readme.html" class="breadcrumb">Read me</a>                                       
+                  </div>
+                </div>
+            </nav>
+        
+        <div class="container">
+    <div class="section">
+
+      Cositas a redactar<br>
             Comisión y nombre de las dos
             
             Cambios en el modelo json original
             Cambios en la funcionalidad (compartir link por guardar favorito y descargar imagen)
             
             Listar librerías extra utilizadas
+
+    </div>
+  </div>
+        
+        <div class="col s8">
+            
         </div>
     </body>
 </html>
