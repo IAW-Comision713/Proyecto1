@@ -1,0 +1,17 @@
+[{
+    "Malla": {"id": "0", "nombre": "Malla vacia", "imagen":"malla-vacia.png"},
+    "Numeros": {"id": "0","nombre": "Numeros vacios", "imagen":"numeros-vacios.png"},
+    "Marco": {"id": "0", "nombre": "Marco vacio", "imagen":"marco-vacio.png"},
+    "Agujas": {"id":"0", "nombre": "Agujas vacias", "imagen":"agujas-vacias.png"}
+ },
+  
+{"Malla":{"id":"1","nombre":"Violeta","imagen":"malla.png"},"Numeros":{"id":"9","nombre":"Stripes","imagen":"numeros-09.png"},"Marco":{"id":"5","nombre":"Negro","imagen":"marco-05.png"},"Agujas":{"id":"4","nombre":"Doradas","imagen":"agujas-04.png"}},
+ 
+{"Malla":{"id":"6","nombre":"Floral","imagen":"malla5.png"},"Numeros":{"id":"8","nombre":"Floral","imagen":"numeros-08.png"},"Marco":{"id":"4","nombre":"Rojo","imagen":"marco-04.png"},"Agujas":{"id":"3","nombre":"Rose","imagen":"agujas-03.png"}},
+
+{"Malla":{"id":"2","nombre":"Roja","imagen":"malla-roja.png"},"Numeros":{"id":"4","nombre":"Pastel","imagen":"numeros-04.png"},"Marco":{"id":"3","nombre":"Dorado","imagen":"marco-02.png"},"Agujas":{"id":"5","nombre":"Casual","imagen":"agujas-05.png"}},
+
+{"Malla":{"id":"7","nombre":"Verde","imagen":"malla7.png"},"Numeros":{"id":"7","nombre":"Tonos verdes","imagen":"numeros-07.png"},"Marco":{"id":"2","nombre":"Plateado","imagen":"marco-03.png"},"Agujas":{"id":"2","nombre":"Glow-in-the-dark","imagen":"agujas-02.png"}}
+
+]
+

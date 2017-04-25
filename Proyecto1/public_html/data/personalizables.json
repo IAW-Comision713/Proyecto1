@@ -1,0 +1,52 @@
+{
+    "Malla": [ 
+         { "id": "1", "nombre": "Violeta", "imagen":"malla.png"},
+        
+        { "id": "2", "nombre": "Roja", "imagen":"malla-roja.png"},
+        
+	{ "id": "3", "nombre": "Tornasol", "imagen":"malla2.png"},
+        
+        { "id": "4", "nombre": "Violeta oscuro", "imagen":"malla3.png"},
+        
+        { "id": "5", "nombre": "Amarilla", "imagen":"malla4.png"},
+        
+        { "id": "6", "nombre": "Floral", "imagen":"malla5.png"},
+        
+        { "id": "7", "nombre": "Verde", "imagen":"malla7.png"}
+	],  
+    
+
+    "Numeros": [
+	{"id": "1", "nombre": "Camuflado azul", "imagen":"numeros-01.png"},
+        {"id": "2", "nombre": "Playa", "imagen":"numeros-02.png"},
+        {"id": "3", "nombre": "Chrome", "imagen":"numeros-03.png"},
+        {"id": "4", "nombre": "Pastel", "imagen":"numeros-04.png"},
+        {"id": "5", "nombre": "Turquesa", "imagen":"numeros-05.png"},
+        {"id": "6", "nombre": "Arrow", "imagen":"numeros-06.png"},
+        {"id": "7", "nombre": "Tonos verdes", "imagen":"numeros-07.png"},
+        {"id": "8", "nombre": "Floral", "imagen":"numeros-08.png"},
+        {"id": "9", "nombre": "Stripes", "imagen":"numeros-09.png"},
+        {"id": "9", "nombre": "Bubbles", "imagen":"numeros-10.png"},
+        {"id": "9", "nombre": "Gris", "imagen":"numeros-11.png"},
+        {"id": "9", "nombre": "Simple", "imagen":"numeros-12.png"},
+        {"id": "9", "nombre": "Arcoiris", "imagen":"numeros-13.png"}
+	],
+        
+    "Marco": [
+		{"id": "1", "nombre": "Marrón", "imagen":"marco-01.png"},
+                {"id": "2", "nombre": "Plateado", "imagen":"marco-03.png"},
+                {"id": "3", "nombre": "Dorado", "imagen":"marco-02.png"},
+                {"id": "4", "nombre": "Rojo", "imagen":"marco-04.png"},
+                {"id": "5", "nombre": "Negro", "imagen":"marco-05.png"}
+	],    
+        
+       "Agujas": [
+            {"id":"1", "nombre": "Dark", "imagen":"agujas-01.png"},
+            {"id":"3", "nombre": "Rose", "imagen":"agujas-03.png"},
+            {"id":"2", "nombre": "Glow-in-the-dark", "imagen":"agujas-02.png"},
+             {"id":"5", "nombre": "Casual", "imagen":"agujas-05.png"},
+            {"id":"4", "nombre": "Doradas", "imagen":"agujas-04.png"}
+           
+	
+	]
+}
