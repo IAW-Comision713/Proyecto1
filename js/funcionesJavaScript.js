@@ -1,6 +1,7 @@
 var personalizables;
 var modelo;
 var preestablecidos;
+var modelovacio;
 
 $(function() {
     var ajax = new AJAXInteraction("data/personalizables.json", function(data) {
@@ -13,7 +14,14 @@ $(function() {
         
         preestablecidos = data;
         cargarmenupreestablecidos(data.length);
-        cargarpreestablecido(0);
+    });
+    ajax.doGet();
+    
+    ajax = new AJAXInteraction("data/relojvacio.json", function(data) {
+        
+        modelovacio = data;
+        modelo = modelovacio;
+        limpiarReloj();
     });
     ajax.doGet();
  
@@ -89,16 +97,15 @@ function cargarmenupreestablecidos(cant) {
     
     var lista = $("<ul></ul>");
     
-    var index;
-    for(index = 1; index < cant; index++) {
+    for(var p in preestablecidos) {
         
         var item = $("<li></li>");
-        var opcion = $("<a></a>").text("Modelo "+index);
+        var opcion = $("<a></a>").text(p);
         opcion.attr("class", "waves-effect btn");
         item.append(opcion);
         lista.append(item);
         
-        opcion.on("click", {"id":index}, function(e) {
+        opcion.on("click", {"id": p}, function(e) {
             
             cargarpreestablecido(e.data.id);
         });
@@ -109,22 +116,20 @@ function cargarmenupreestablecidos(cant) {
 
 function limpiarReloj(){
     
-    cargarpreestablecido(0);
+    cargarmodelo(modelovacio);
 }
 
-function cargarmodelo(modelo) {
+function cargarmodelo(mod) {
     
-    for(var parte in modelo) {
+    for(var parte in mod) {
         
-        actualizarReloj(parte, modelo[parte]);
+        actualizarReloj(parte, mod[parte]);
     }
 }
 
 function cargarpreestablecido(id) {
-    
-    modelo = preestablecidos[id];
-    
-    cargarmodelo(modelo);
+        
+    cargarmodelo(preestablecidos[id]);
 }
 
 function addFavoritos(){

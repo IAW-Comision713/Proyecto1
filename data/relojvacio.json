@@ -1,0 +1,6 @@
+{
+    "Malla": {"id": "0", "nombre": "Malla vacia", "imagen":"malla-vacia.png"},
+    "Numeros": {"id": "0","nombre": "Numeros vacios", "imagen":"numeros-vacios.png"},
+    "Marco": {"id": "0", "nombre": "Marco vacio", "imagen":"marco-vacio.png"},
+    "Agujas": {"id":"0", "nombre": "Agujas vacias", "imagen":"agujas-vacias.png"}
+ }
