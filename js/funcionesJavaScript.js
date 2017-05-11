@@ -19,11 +19,18 @@ $(function() {
     
     ajax = new AJAXInteraction("data/relojvacio.json", function(data) {
         
+        modelo = data;
+    });
+    ajax.doGet();
+    
+    ajax = new AJAXInteraction("data/relojvacio.json", function(data) {
+        
         modelovacio = data;
-        modelo = modelovacio;
         limpiarReloj();
     });
     ajax.doGet();
+    
+    
  
     $('.parallax').parallax();
     $('.collapsible').collapsible();
